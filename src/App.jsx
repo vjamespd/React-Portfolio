@@ -4,6 +4,7 @@ import Test from "./components/Test";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Technologies from "./components/Technologies";
+import Experience from "./components/Experience";
 
 const App = () => {
   return (
@@ -13,8 +14,9 @@ const App = () => {
       <div className="relative container mx-auto px-8">
         <NavBar />
         <Hero />
-        <About/>
-        <Technologies/>
+        <About />
+        <Technologies />
+        <Experience />
       </div>
     </div>
   );
