@@ -1,6 +1,5 @@
 import React from "react";
 import NavBar from "./components/NavBar";
-import Test from "./components/Test";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Technologies from "./components/Technologies";
