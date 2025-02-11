@@ -45,17 +45,20 @@ const Experience = () => {
               >
                 {experience.description}
               </motion.p>
+              <div className="flex flex-wrap">
               {experience.technologies.map((tech, index) => (
                 <motion.span
                 whileInView={{ opacity: 1, x: 0 }}
                 initial={{ opacity: 0, x: 100 }}
                 transition={{ duration: 1 }}
                   key={index}
-                  className="mr-2 mt-4 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-800"
+                  className="mr-2 mt-4 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-800 items-center"
                 >
                   {tech}
                 </motion.span>
               ))}
+              </div>
+              
             </div>
           </div>
         ))}

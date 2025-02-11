@@ -36,14 +36,19 @@ const Projects = () => {
               initial={{ opacity: 0, x: 100 }}
               transition={{ duration: 0.7 }}
               className="mb-4 text-neutral-400">{project.description}</motion.p>
+              <div className="flex flex-wrap">
               {project.technologies.map((tech, index) => (
-                <span
+                <motion.span
+                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, x: 100 }}
+                transition={{ duration: 1 }}
                   key={index}
-                  className="mr-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-900"
+                  className="mr-2 mt-4 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-900"
                 >
                   {tech}
-                </span>
+                </motion.span>
               ))}
+              </div>
             </div>
           </div>
         ))}
